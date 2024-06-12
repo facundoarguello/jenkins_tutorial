@@ -3,9 +3,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'node --version'
                 echo "hola atodos"
             }
+        stage('test') {
+            steps {
+                echo 'Testeando'
+            }
+        }
         }
     }
 }
