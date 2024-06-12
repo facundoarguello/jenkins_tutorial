@@ -6,12 +6,13 @@ pipeline {
                 echo "hola atodos"
             }
         }
-        when {
-            expression {
-                BRANCH_NAME == 'FACU'
-            }
-        }
+        
         stage('test') {
+            when {
+                expression {
+                    BRANCH_NAME == 'FACU'
+                }
+            }
             steps {
                 echo 'Testeando'
             }
