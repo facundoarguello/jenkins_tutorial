@@ -5,11 +5,12 @@ pipeline {
             steps {
                 echo "hola atodos"
             }
+        }
         stage('test') {
             steps {
                 echo 'Testeando'
             }
         }
-        }
+        
     }
 }
